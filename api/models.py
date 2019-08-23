@@ -12,6 +12,10 @@ class Generation(models.Model):
         ('OESTE', 'Oeste'),
         ('NORTE', 'Norte'),
         ('SUR', 'Sur'),
+        ('NOR ESTE', 'Nor este'),
+        ('NOR OESTE', 'Nor oeste'),
+        ('SUR OESTE', 'Sur oeste'),
+        ('SUR ESTE', 'Sur este'),
     ]
     direccion_viento = models.CharField(
         max_length=10,
