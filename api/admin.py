@@ -3,4 +3,4 @@ from api.models import *
 # Register your models here.
 
 
-admin.site.register(Generation)
+admin.site.register(Eolica)

@@ -3,11 +3,11 @@ from django.db import models
 # Create your models here.
 
 
-class Generation(models.Model):
-    tension = models.IntegerField()
-    corriente = models.IntegerField()
-    velocidad_viento = models.IntegerField()
-    DIRECCION_VIENTO = [
+class Eolica(models.Model):
+    i = models.FloatField()
+    w_s = models.FloatField()
+    w_d = models.CharField(max_length=20)
+    r = [
         ('ESTE', 'Este'),
         ('OESTE', 'Oeste'),
         ('NORTE', 'Norte'),
@@ -17,9 +17,9 @@ class Generation(models.Model):
         ('SUR OESTE', 'Sur oeste'),
         ('SUR ESTE', 'Sur este'),
     ]
-    direccion_viento = models.CharField(
+    r = models.CharField(
         max_length=10,
-        choices=DIRECCION_VIENTO,
+        choices=r,
         default='ESTE',
     )
 
