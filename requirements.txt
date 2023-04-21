@@ -4,7 +4,7 @@ Django==2.2.4
 more-itertools==7.2.0
 pytz==2019.2
 six==1.12.0
-sqlparse==0.3.0
+sqlparse==0.4.4
 CherryPy==18.1.2
 jaraco.functools==2.0
 more-itertools==7.2.0
